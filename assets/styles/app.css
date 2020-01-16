@@ -2,6 +2,8 @@ body {
     background-color: #e0dada;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    --nav-bar-height: 70px;
+    --side_nav-width: 250px;
 }
 
 .white-svg {
@@ -9,16 +11,20 @@ body {
 }
 
 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav a {
     padding: .5em;
     color: white;
-    text-decoration: none;
 }
 
 .nav {
     position: fixed;
     background-color: #4051b5;
-    height: 58px;
-    padding: 0 1em;
+    height: var(--nav-bar-height);
+    padding-right: 1em;
     color: white;
     box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.3)
 }
@@ -36,14 +42,17 @@ a {
 }
 
 .nav__left {
-    width: 180px;
+    width: var(--side_nav-width);
     justify-content: center;
+}
+
+.nav__left img {
+    vertical-align: middle;
 }
 
 .nav__left span {
     text-transform: uppercase;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 20px;
 }
 
 .nav__right__menu__search input {
@@ -67,3 +76,64 @@ a {
     right: 0;
     margin: auto;
 }
+
+/* side nav */
+
+.sidenav {
+    position: fixed;
+    top:  var(--nav-bar-height);
+    background-color: white;
+    width: var(--side_nav-width);
+    border-top: 3px double grey;
+    box-shadow: inset 0px 4px 5px -4px rgba(0,0,0,0.75);
+    padding: 1em 0;
+    /* overflow: scroll; */
+    overflow-y: scroll;
+    max-height: calc(100% - var(--nav-bar-height));
+}
+
+.sidenav h5 {
+    margin: 1em 1.5em 1em 1.5em;
+}
+
+.sidenav a {
+    width: 100%;
+    padding: 1em;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.sidenav li {
+    list-style: none;
+    border-left: 2px solid transparent;
+}
+
+.sidenav li a:after {
+    content: "";
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 1em;
+    width: 1em;
+    position: absolute;
+    right: 10px;
+    background-image: url("keyboard_arrow_right-24px.svg");
+    background-position: center;
+}
+
+.sidenav li:hover {
+    background-color: #f5f5f5;
+    border-left: 2px solid #4051b5;
+}
+
+.sidenav ul {
+    padding: 0;
+}
+
+.sidenav li img {
+    vertical-align: middle;
+    margin: 0 7px;
+}
+
