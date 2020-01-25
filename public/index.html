@@ -5,68 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Minion - Responsive Admin Something...</title>
-    <link rel="stylesheet" href="app.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav__left">
+    <header>
+        <div class="logo">
             <a href="">
-                <img src="icons/track_changes-24px.svg" class="white-svg" alt="Logo">
+                <img src="assets/images/track_changes-24px.svg" class="white-svg" alt="Logo">
                 <span>Minion</span>
             </a>  
         </div>
-        <div class="nav__right">
-            <div class="nav__right__menu">
-                <a href=""><img src="icons/menu-24px.svg" class="white-svg" alt="Menu"></a>
-                <div class="nav__right__menu__search">
-                    <img class="search_icon white-svg" src="icons/search-24px.svg" alt="">
+        <nav class="topnav">
+            <div class="topnav__menu">
+                <a href=""><img src="assets/images/menu-24px.svg" class="white-svg" alt="Menu"></a>
+                <div class="topnav__menu__search">
+                    <img class="search_icon white-svg" src="assets/images/search-24px.svg" alt="">
                     <input type="search" name="" id="" placeholder="Search...">
                 </div>
             </div>
-            <div class="nav__right__list">
-                <a href=""><img src="icons/more_horiz-24px.svg" class="white-svg" alt="More"></a>
-                <a href=""><img src="icons/notification_important-24px.svg" class="white-svg" alt="Notifications"></a>
-                <a href=""><img src="icons/face-24px.svg" class="white-svg" alt="Profile picture"></a>
+            <div class="topnav__list">
+                <a href=""><img src="assets/images/more_horiz-24px.svg" class="white-svg" alt="More"></a>
+                <a href=""><img src="assets/images/notification_important-24px.svg" class="white-svg" alt="Notifications"></a>
+                <a href=""><img src="assets/images/face-24px.svg" class="white-svg" alt="Profile picture"></a>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <nav class="sidenav">
         <h5>Main</h5>
         <ul>
             <li>
                 <a href="">
-                    <img src="icons/home-24px.svg" alt="">
+                    <img src="assets/images/home-24px.svg" alt="">
                     <span>Dashboard</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="icons/format_paint-24px.svg" alt="">
+                    <img src="assets/images/format_paint-24px.svg" alt="">
                     <span>UI Kit</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="icons/text_fields-24px.svg" alt="">
+                    <img src="assets/images/text_fields-24px.svg" alt="">
                     <span>Typography</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="icons/extension-24px.svg" alt="">
+                    <img src="assets/images/extension-24px.svg" alt="">
                     <span>Components</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="icons/pan_tool-24px.svg" alt="">
+                    <img src="assets/images/pan_tool-24px.svg" alt="">
                     <span>Icons</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="icons/folder_open-24px.svg" alt="">
+                    <img src="assets/images/folder_open-24px.svg" alt="">
                     <span>Forms</span>
                 </a>
             </li>
@@ -75,25 +75,25 @@
         <ul>
             <li>
                 <a href="">
-                    <img src="icons/view_list-24px.svg" alt="">
+                    <img src="assets/images/view_list-24px.svg" alt="">
                     <span>Tables</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="icons/show_chart-24px.svg" alt="">
+                    <img src="assets/images/show_chart-24px.svg" alt="">
                     <span>Charts</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="icons/map-24px.svg" alt="">
+                    <img src="assets/images/map-24px.svg" alt="">
                     <span>Maps</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="icons/mail-24px.svg" alt="">
+                    <img src="assets/images/mail-24px.svg" alt="">
                     <span>Mail</span>
                 </a>
             </li>
@@ -102,17 +102,154 @@
         <ul>
             <li>
                 <a href="">
-                    <img src="icons/find_in_page-24px.svg" alt="">
+                    <img src="assets/images/find_in_page-24px.svg" alt="">
                     <span>Pages</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="icons/card_giftcard-24px.svg" alt="">
+                    <img src="assets/images/card_giftcard-24px.svg" alt="">
                     <span>Extras</span>
                 </a>
             </li>
         </ul>
     </nav>
+    <main class="container">
+        <div class="container__head">
+            <h2>Welcome!</h2>
+            <div class="nav-path">
+                <span>Minion</span>
+                <span>Dashboard</span>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="card stats__card">
+                <img src="https://img.icons8.com/dusk/64/000000/joyent.png">
+                <div>
+                    <span class="stats__card__number">64,789</span>
+                    <span class="stats__card__label">Today's Visits</span class="stats__card__number">
+                </div>
+            </div>
+            <div class="card stats__card">
+                <img src="https://img.icons8.com/dusk/64/000000/gog-galaxy.png">
+                <div>
+                    <span class="stats__card__number">64,789</span>
+                    <span class="stats__card__label">Total Revenue</span>
+                </div>
+            </div>
+            <div class="card stats__card">
+                <img src="https://img.icons8.com/dusk/64/000000/game-center-mail-ru.png">
+                <div>
+                    <span class="stats__card__number">64,789</span>
+                    <span class="stats__card__label">Today's Sales</span>
+                </div>
+            </div>
+            <div class="card stats__card">
+                <img src="https://img.icons8.com/dusk/64/000000/unity-5.png">
+                <div>
+                    <span class="stats__card__number">6.16%</span>
+                    <span class="stats__card__label">Conversion</span>
+                </div>
+            </div>
+        </div>
+        <div class="charts">
+            <div class="card charts_card">
+                <span class="charts_card_label">Yearly sales report</span>
+            </div>
+            <div class="card charts_card">
+                <span class="charts_card_label">Total Revenue</span>
+            </div>
+            <div class="card charts_card">
+                <span class="charts_card_label">Total revenue</span>
+            </div>
+        </div>
+        <div class="mixed">
+            <div class="card projects_card">
+                <span class="projects_card_label">Latest projects</span>
+                <span class="projects_card_subhead">Your awesoe text goes here.</span>
+                <table class="tb-projects">
+                    <tr>
+                        <th>#</th>
+                        <th>Project Name</th>
+                        <th>Start Date</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                        <th>Assign</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Minion admin</td>
+                            <td>2019-01-01</td>
+                            <td>2019-01-03</td>
+                            <td>Resolved</td>
+                            <td>Coderthemes</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Minion admin</td>
+                            <td>2019-01-01</td>
+                            <td>2019-01-03</td>
+                            <td>Resolved</td>
+                            <td>Coderthemes</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Minion admin</td>
+                            <td>2019-01-01</td>
+                            <td>2019-01-03</td>
+                            <td>Resolved</td>
+                            <td>Coderthemes</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Minion admin</td>
+                            <td>2019-01-01</td>
+                            <td>2019-01-03</td>
+                            <td>Resolved</td>
+                            <td>Coderthemes</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Minion admin</td>
+                            <td>2019-01-01</td>
+                            <td>2019-01-03</td>
+                            <td>Resolved</td>
+                            <td>Coderthemes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <section class="users">
+                <div class="user__card">
+                    <img class="user-image" src="http://placekitten.com/50/50" alt="">
+                    <div class="user-details">
+                        <span class="name">Tahamasu</span>
+                        <span class="email">one@two.three</span>
+                        <span class="group">Admin</span>
+                    </div>
+                </div>
+                <div class="user__card">
+                    <img class="user-image" src="http://placekitten.com/50/50" alt="">
+                    <div class="user-details">
+                        <span class="name">Tahamasu</span>
+                        <span class="email">one@two.three</span>
+                        <span class="group">User</span>
+                    </div>
+                </div>
+                <div class="user__card">
+                    <img class="user-image" src="http://placekitten.com/50/50" alt="">
+                    <div class="user-details">
+                        <span class="name">Tahamasu</span>
+                        <span class="email">one@two.three</span>
+                        <span class="group">Admin</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <span class="copyright">2020 @ Minion.</span>
+    </footer>
 </body>
 </html>
